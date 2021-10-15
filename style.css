@@ -1,0 +1,376 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #e7ecef;
+}
+
+.container {
+    padding: 0 20px;
+    width: 1170px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* Header Style */
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #001233;
+}
+
+/* Akhir Custom Scrollbar */
+
+/* Navbar Style */
+.nav-section {
+    background-color: #001233;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: slideKiri 2s ease-in-out;
+}
+
+.logo img {
+    width: 35px;
+    height: 35px;
+}
+
+.logo a {
+    color: aliceblue;
+    margin-left: 10px;
+    font-size: 30px;
+    font-family: 'Charm', cursive;
+}
+
+.menu {
+    animation: slideKanan 2s ease-in-out;
+}
+
+.menu ul li {
+    display: inline-block;
+}
+
+.menu ul li:not(:last-child) {
+    margin-right: 20px;
+}
+
+.menu ul li a {
+    color: aliceblue;
+    font-size: 18px;
+    transition: 1s ease-in-out;
+}
+
+.menu ul li a:hover {
+    border-bottom: 1px solid aliceblue;
+}
+
+.navbar i {
+    display: inline-block;
+    color: aliceblue;
+    font-size: 30px;
+    display: none;
+    cursor: pointer;
+}
+
+/* Top-Wrapper Style */
+.top-wrapper {
+    width: 100%;
+    height: 100vh;
+    background-image: url("image/bg6.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 0 35px 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-text {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.top-text h1 {
+    text-transform: capitalize;
+    color: aliceblue;
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+.top-text p {
+    color: aliceblue;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* Akhir Style Header */
+
+/* Style Bagian Isi */
+.lesson-wrapper {
+    min-height: 500px;
+    padding-top: 175px;
+    padding: 0 5%;
+    background-color: #e7ecef;
+    text-align: center;
+    overflow: hidden;
+}
+
+.lesson-konten {
+    margin-top: 40px;
+}
+  
+.heading {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #001233;
+    animation: fallDown 2s ease-in-out;
+}
+  
+.heading h2 {
+    font-weight: normal;
+    font-family: 'Epilogue', sans-serif;
+    opacity: 0.8;
+    font-size: 50px;
+    letter-spacing: 8px;
+}
+
+.lesson-detail {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeOut 2s ease-in-out;
+}
+
+.lesson {
+    width: 25%;
+    position: relative;
+    cursor: pointer;
+    margin: 0 10px;
+    overflow: hidden;
+}
+
+.lesson img {
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+}
+
+.lesson p {
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #001233;
+}
+
+.lesson .lesson-desc {
+    position: absolute;
+    background-color: #001233;
+    width: 100%;
+    height: 92.8%;
+    padding: 10px;
+    border-radius: 3px;
+    top: 0;
+    transform: translateY(-100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.7s ease-in-out;
+}
+
+.lesson .lesson-desc p {
+    color: #e7ecef;
+    font-size: 14px;
+}
+
+.lesson:hover .lesson-desc {
+    transform: translateY(0);
+}
+
+/* About us Style */
+.about-wrapper {
+    padding: 200px 40px;
+    background-image: url("http://cdn29.us1.fansshare.com/pictures/tumblrbackgrounds/deep-space-hd-wallpaper-hd-wallpapers-background-in-space-nature-landscape-images-space-backgrounds-space-148846899.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: left;
+}
+  
+.about-wrapper h1 {
+    opacity: 0.8;
+    font-size: 60px;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+    color: aliceblue;
+}
+  
+.about-wrapper p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    opacity: 0.8;
+    letter-spacing: 1px;
+    margin-bottom: 3px;
+    color: aliceblue;
+}  
+/* Akhir Style Bagian Isi */
+
+/* Footer Style */
+footer {
+    /* height: 60px; */
+    margin: 10px 0;
+    width: 100%;
+}
+
+.footer-konten {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.kiri img {
+    height: 35px;
+    width: 35px;
+}
+
+.kiri a {
+    margin-left: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Charm', cursive;
+    color: #001233;
+}
+
+.copyright {
+    color: #001233;
+}
+
+.tengah {
+    text-align: center;
+    color: #001233;
+}
+
+.tengah ul li {
+    font-size: 16px;
+    margin-bottom: 7px;
+    cursor: pointer;
+}
+
+.kanan h4 {
+    color: #001233;
+    margin-bottom: 5px;
+}
+
+.kanan ul li {
+    margin-bottom: 5px;
+}
+
+.kanan ul li a {
+    color: #001233;
+}
+
+.kanan ul li:nth-child(1) a:hover {
+    color: #CD201F;
+}
+.kanan ul li:nth-child(2) a:hover {
+    color: #E4405F;
+}
+.kanan ul li:nth-child(3) a:hover {
+    color: #1DA1F2;
+}
+.kanan ul li:nth-child(4) a:hover {
+    color: #0A66C2;
+}
+
+.kanan ul li a i {
+    margin-right: 5px;
+}
+/* Akhir Footer Style */
+
+
+/* Menambahkan animasi */
+@keyframes fadeOut {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+    }
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+@keyframes fallDown {
+    0% {
+        transform: translateY(-80%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideKanan {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideKiri {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}

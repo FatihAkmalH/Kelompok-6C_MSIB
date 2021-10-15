@@ -1,0 +1,112 @@
+/* untuk tablet */
+@media (max-width: 1000px) {
+    .container {
+        width: 100%;
+    }
+}
+
+/* Untuk smartphone */
+@media (max-width: 678px) {
+    .container {
+        width: 100%;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .navbar i {
+        display: block;
+    }
+
+    .top-wrapper {
+        height: 75vh;
+    }
+
+    .top-text h1 {
+        font-size: 28px;
+    }
+
+    .top-text p {
+        font-size: 18px;
+    }
+
+    .heading h2 {
+        font-size: 40px;
+    }
+
+    .lesson-wrapper {
+        width: 100%;
+    }
+
+    .lesson-detail {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .lesson {
+        width: 100%;
+        margin: 20px 10px;
+    }
+
+    .lesson p {
+        font-size: 25px;
+    }
+
+    .lesson .lesson-desc {
+        height: 93.8%;
+    }
+
+    .lesson .lesson-desc p {
+        font-size: 16px;
+    }
+
+    .about-wrapper p {
+        font-size: 16px;
+    }
+
+    .about-wrapper h1 {
+        font-size: 50px;
+    }
+
+    footer {
+        margin-top: 40px;
+    }
+
+    .form-kanan {
+        padding-top: 0;
+    }
+
+    .footer-konten {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .kiri {
+        text-align: left;
+    }
+
+    .tengah {
+        text-align: left;
+        margin-top: 20px;
+    }
+
+    .kanan {
+        margin-top: 15px;
+    }
+    
+    .kontak-icon {
+        position: absolute;
+        width: 70%;
+        bottom: -40px;
+        left: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .kontak-icon a {
+        margin: 0 45px;
+        font-size: 35px;
+    }
+}
